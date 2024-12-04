@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFTeretana.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTeretana"
+        mc:Ignorable="d"
+        Title="Teretana" Height="450" Width="850">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+                  AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnTrener" Content="Treneri" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnTrener_Click"/>
+            <Button x:Name="btnClanovi" Content="Članovi" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnČlanovi_Click"/>
+            <Button x:Name="btnRegistracije" Content="Registracije" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRegistracija_Click" />
+            <Button x:Name="btnTipTreninga" Content="Tipovi treninga" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="85" Click="btnTipTreninga_Click"/>
+            <Button x:Name="btnOsiguranje" Content="Osiguranja" HorizontalAlignment="Left" Width="75" Click="btnOsiguranje_Click"/>
+            <Button x:Name="btnSprava" Content="Sprave" Width="75" Click="btnSprava_Click" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="360" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click" />
+            <Button x:Name="btnObrisi" Content="Obriši" Width="120" Click="btnObrisi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
